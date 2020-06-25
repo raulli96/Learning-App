@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">UserLogin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="form">
+      <input type="text" [(ngModel)]="UserName" placeholder="UserName*">
+      <input type="password" [(ngModel)]="Password" placeholder="Password*">
+      <br>
+      <ion-button (click)="LogMeIn()" color="dark">LogIn</ion-button>
+    </div>
+  </div>
+</ion-content>
+

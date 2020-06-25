@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <div class="form">
+      <input type="text" placeholder="Email*"
+      required maxlength="20" minlength="3"
+      ngModel name="name" #name="ngModel">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+          class="alert alert-danger">
+          <div *ngIf="name.errors.required">
+          Name is required.
+          </div>
+          <div *ngIf="name.errors.maxlength">
+          Name cannot be more than 30 characters long.
+          </div>
+          <div *ngIf="name.errors.minlength">
+          Name must be at least 2 characters long.
+          </div>
+        </div>
+      <ion-button  color="dark">SignUP</ion-button>
+    </div>
+  </div>
+</ion-content>
+
