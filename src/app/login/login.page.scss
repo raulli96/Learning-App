@@ -1,21 +1,50 @@
-.container{
-    padding-top:5px;
- 
-}
+.toolbar{
+    text-align: center;
+    font-size: x-small;
+  }
 .form{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+   padding: 12px;
 }
 input[type=text], input[type=password]{
+    font-weight:600px;
+    font-family: sans-serif;
     width: 100%;
     padding: 8px;
-    margin: 5px 0 10px 0;
-    display: inline-block;
-  
+    margin: 0 0 12px 0;
+    font-size: small;
 }
 .button{
+    font-size: small;
+    text-transform: none;
     width: 100%;
-    padding: 8px;
- }
+}
+.regbotton{
+    font-size: small;
+    position: relative;
+    top: 258px;
+    padding:12px;
+    text-transform: none;
+}
+.row-icon1{
+  font-size: xx-large;
+  // background: darkblue;
+    display:inline-block 
+  
+}
+.row-icon2{
+  font-size: xx-large; 
+   // background:brown;
+    display:inline-block 
+}
+.m1{
+    text-align: center;
+    padding-bottom:15px;
+}
+.m2{
+    text-align:center;
+    position: relative;
+    top:255px;
+    font-size: small;
+    
+
+}
