@@ -14,10 +14,9 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
   LogMeIn(){
 
-    if(this.UserName=="admin"&& this.Password=="admin123")
+   if(this.UserName=="admin"&& this.Password=="admin123")
    {
     this.router.navigate(['/home'])
    }  
