@@ -1,28 +1,90 @@
-<ion-header>
+<ion-header class="header">
   <ion-toolbar>
-    <ion-title align="center">Register</ion-title>
-  </ion-toolbar>
+    <ion-title>Registration</ion-title>
+  </ion-toolbar> 
 </ion-header>
 <ion-content>
   <div class="container">
-    <div class="form">
-      <input type="text" placeholder="Email*"
-      required maxlength="20" minlength="3"
-      ngModel name="name" #name="ngModel">
-        <div *ngIf="name.invalid && (name.dirty || name.touched)"
-          class="alert alert-danger">
-          <div *ngIf="name.errors.required">
-          Name is required.
+    <form>
+      <input type="text" placeholder="FirstName *"
+            required maxlength="20" minlength="3"
+            ngModel name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+            First Name is required.
+            </div>
+            <div *ngIf="name.errors.maxlength">
+            Name cannot be more than 20 characters long.
+            </div>
+            <div *ngIf="name.errors.minlength">
+            Name must be at least 2 characters long.
+            </div>
           </div>
-          <div *ngIf="name.errors.maxlength">
-          Name cannot be more than 30 characters long.
+      <input type="text" placeholder="LastName *"
+            required maxlength="30" minlength="5"
+            ngModel name="name" #name="ngModel" required>
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+            Last Name is required.
+            </div>
+            <div *ngIf="name.errors.maxlength">
+            Name cannot be more than 30 characters long.
+            </div>
+            <div *ngIf="name.errors.minlength">
+            Name must be at least 5 characters long.
+            </div>
           </div>
-          <div *ngIf="name.errors.minlength">
-          Name must be at least 2 characters long.
+      <input type="text" placeholder="UserName *"
+            required maxlength="50" minlength="3"
+            ngModel name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+             User Name is required.
+            </div>
+            <div *ngIf="name.errors.maxlength">
+            Name cannot be more than 50 characters long.
+            </div>
+            <div *ngIf="name.errors.minlength">
+            Name must be at least 5 characters long.
+            </div>
           </div>
-        </div>
-      <ion-button  color="dark">SignUP</ion-button>
-    </div>
+      <input type="text" placeholder="Email *"
+            required maxlength="50" minlength="3"
+            ngModel name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+            Email Name is required.
+            </div>
+          </div>
+      <input type="text" placeholder="Password *"
+            required maxlength="50" minlength="3"
+            ngModel name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+            Password is required.
+            </div>
+            <div *ngIf="name.errors.minlength">
+            Name must be at least 5 characters long.
+            </div>
+          </div>
+      <input type="text" placeholder="PhoneNo *"
+            required maxlength="10" minlength=""
+            ngModel name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="alert alert-danger">
+            <div *ngIf="name.errors.required">
+            PhoneNo is required.
+            </div>
+          </div>
+      <ion-button color="dark" expand="full">Register</ion-button> 
+    </form>
+  </div>
+  <div class="ibar" >
+    Already have an account?
   </div>
 </ion-content>
-
