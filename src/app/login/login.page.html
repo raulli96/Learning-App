@@ -1,31 +1,30 @@
   <ion-toolbar class="toolbar">
-    <ion-title>Login</ion-title>
+    <ion-title>Sign In</ion-title>
   </ion-toolbar>
 <ion-content>
-  <div>
+  <div class=""> 
     <div class="form">
-      <input type="text" [(ngModel)]="UserName" placeholder="UserName *">
+      <input type="text" [(ngModel)]="UserName" placeholder="UserName or Email Address *">
       <input type="password" [(ngModel)]="Password" placeholder="Password *">
-      <ion-button (click)="LogMeIn()" color="dark">LogIn</ion-button>
+      <ion-button (click)="LogMeIn()" color="dark">Sign In</ion-button>
     </div>   
     <div class="m1">
       or
     </div>
-    <div class="row-icon1">
-      <a href="https://en-gb.facebook.com/login/">
-      <ion-icon name="logo-facebook"></ion-icon>
-      </a>
+     <div class="socialicon" >
+      <ion-icon name="logo-facebook" class="row-icon1"></ion-icon>
+      <ion-icon name="logo-google" class="row-icon2"></ion-icon>
     </div>
-    <div class="row-icon2">
-      <a href="https://en-gb.facebook.com/login/">
-      <ion-icon name="logo-google"></ion-icon>
-      </a>
-    </div>
+    
+ </div>
+ </ion-content>
+ <ion-footer>
+   <div>
     <div class="m2">
       Don't have an account?
     </div>
-    <div class="regbotton">
-      <ion-button (click)="RegisterUser()" color="dark">Register</ion-button> 
+    <div class="button2">
+      <ion-button (click)="RegisterUser()" color="dark" expand="full">Register</ion-button> 
     </div>
- </div>
-</ion-content>
+   </div>
+ </ion-footer>
